@@ -227,15 +227,15 @@
               href="#services"
               class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
               :class="s==='services'?'on !text-zinc-900 dark:!text-white':''"
-              >Chương trình truyền hình</a
+              >Kinh nghiệm và thế mạnh</a
             >
           </li>
           <li>
             <a
-              href="#work"
+              href="#blog"
               class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
-              :class="s==='work'?'on !text-zinc-900 dark:!text-white':''"
-              >Sự kiện</a
+              :class="s==='blog'?'on !text-zinc-900 dark:!text-white':''"
+              >Phong cách & trang phục</a
             >
           </li>
           <li>
@@ -248,10 +248,10 @@
           </li>
           <li>
             <a
-              href="#blog"
+              href="#work"
               class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
-              :class="s==='blog'?'on !text-zinc-900 dark:!text-white':''"
-              >PHONG CÁCH và TRANG PHỤC</a
+              :class="s==='work'?'on !text-zinc-900 dark:!text-white':''"
+              >Chương trình đã dẫn</a
             >
           </li>
           <li>
@@ -381,15 +381,15 @@
               href="#services"
               @click="mm=false"
               class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors"
-              >Chương trình truyền hình</a
+              >Kinh nghiệm và thế mạnh</a
             >
           </li>
           <li>
             <a
-              href="#work"
+              href="#blog"
               @click="mm=false"
               class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors"
-              >Sự kiện</a
+              >Phong cách & trang phục</a
             >
           </li>
           <li>
@@ -402,10 +402,10 @@
           </li>
           <li>
             <a
-              href="#blog"
+              href="#work"
               @click="mm=false"
               class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors"
-              >PHONG CÁCH và TRANG PHỤC</a
+              >Chương trình đã dẫn</a
             >
           </li>
           <li>
@@ -424,139 +424,117 @@
       <!-- ═══ HERO ═══ -->
       <section
   id="hero"
-  class="relative min-h-screen flex items-center pt-16 overflow-hidden"
+  class="relative min-h-screen flex items-center pt-16 overflow-hidden bg-gradient-to-br from-[#2b0907] via-[#4a0e0a] to-[#1a0504] text-white"
 >
   <div
-    class="absolute top-1/4 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none"
+    class="absolute inset-0 bg-[radial-gradient(circle_at_25%_40%,rgba(245,158,11,0.18),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(220,38,38,0.25),transparent_60%)] pointer-events-none"
     aria-hidden="true"
   ></div>
   <div
-    class="absolute bottom-1/4 left-0 w-64 h-64 bg-zinc-200/50 dark:bg-zinc-800/30 rounded-full blur-3xl pointer-events-none"
+    class="absolute -bottom-16 left-10 w-64 h-64 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute top-1/3 right-10 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"
     aria-hidden="true"
   ></div>
 
-  <div class="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <p
-          class="reveal text-sm font-medium text-accent tracking-widest uppercase mb-4"
-        >
-          Sẵn sàng nhận show
-        </p>
-        <h1
-          class="reveal d1 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6"
-        >
-          MC <span class="text-accent">Tây Phong</span>
-        </h1>
-        <p
-          class="reveal d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-6"
-        >
-          Dẫn chương trình
-          <strong class="font-medium text-zinc-700 dark:text-zinc-300"
-            >Sự kiện, Tiệc cưới, Gala &amp; Hoạt náo</strong
-          >. Giọng nói truyền cảm, xử lý sân khấu linh hoạt, giữ nhịp cảm
-          xúc trọn vẹn cho mọi khoảnh khắc.
-        </p>
-
-        <div
-          class="reveal d2 space-y-2 text-sm md:text-base text-zinc-600 dark:text-zinc-300 max-w-md mb-8"
-        >
-          <div class="flex items-start gap-2">
-            <span class="text-accent font-bold">•</span>
-            <span
-              >Các chương trình mang tính chất hoạt náo, giao lưu khán giả, kết
-              nối người chơi, khuấy động không khí...</span
-            >
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="text-accent font-bold">•</span>
-            <span>Sự kiện khai trương, tân niên, tất niên, sinh nhật...</span>
-          </div>
-          <div class="flex items-start gap-2">
-            <span class="text-accent font-bold">•</span>
-            <span>Sân khấu ngoài trời, teambuilding...</span>
-          </div>
-        </div>
-
-        <div class="reveal d3 flex flex-wrap gap-4">
-          <a
-            href="#work"
-            class="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm"
+  <div class="relative z-10 max-w-6xl mx-auto px-5 py-8 md:py-16 w-full">
+    <div class="grid md:grid-cols-12 gap-6 md:gap-10 items-center">
+      <!-- CỘT TRÁI: Ảnh mở rộng chiều ngang -->
+      <div class="reveal d1 md:col-span-6 flex justify-center md:justify-start">
+        <div class="relative w-full max-w-md md:max-w-none">
+          <div
+            class="rounded-2xl md:rounded-3xl overflow-hidden border-2 border-amber-400/40 shadow-[0_20px_50px_rgba(0,0,0,0.65)] bg-black/30 aspect-[4/3] sm:aspect-[16/10] md:aspect-[4/3]"
           >
-            Xem show đã dẫn
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </a>
-          <a
-            href="#contact"
-            class="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm"
-            >Liên hệ booking</a
-          >
-        </div>
-
-        <!-- SỬA: Cập nhật số liệu thực tế của bạn -->
-        <div
-          class="reveal d4 flex gap-8 mt-12 pt-8 border-t border-zinc-100 dark:border-zinc-900"
-        >
-          <div>
-            <p
-              class="font-display font-bold text-3xl text-zinc-900 dark:text-white"
-            >
-              80+
-            </p>
-            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-              Sự kiện &amp; tiệc đã dẫn
-            </p>
-          </div>
-          <div>
-            <p
-              class="font-display font-bold text-3xl text-zinc-900 dark:text-white"
-            >
-              30+
-            </p>
-            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-              Khách hàng &amp; đối tác
-            </p>
-          </div>
-          <div>
-            <p
-              class="font-display font-bold text-3xl text-zinc-900 dark:text-white"
-            >
-              100%
-            </p>
-            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-              Tận tâm &amp; đúng giờ
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="reveal d2 flex justify-center md:justify-end">
-        <div class="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
-          <div class="pf w-full h-full rounded-3xl">
             <img
               src="images/avata.jpg"
-              alt="MC Tây Phong"
+              alt="Người dẫn chương trình Tây Phong"
+              class="w-full h-full object-cover object-top"
               loading="eager"
             />
           </div>
           <div
-            class="absolute -bottom-4 -left-4 bg-accent text-white font-display font-bold text-sm px-4 py-2.5 rounded-2xl shadow-lg"
+            class="absolute -bottom-2.5 right-3 md:-bottom-3 md:right-4 bg-gradient-to-r from-amber-500 to-yellow-600 text-zinc-950 font-display font-bold text-[10px] md:text-xs uppercase tracking-wider px-3.5 py-1.5 md:px-4 md:py-2 rounded-full shadow-lg"
           >
             Nhận lịch toàn khu vực
           </div>
+        </div>
+      </div>
+
+      <!-- CỘT PHẢI: Tiêu đề, thông số & liên hệ -->
+      <div
+        class="reveal d2 md:col-span-6 text-center md:text-left flex flex-col items-center md:items-start"
+      >
+        <p class="text-base sm:text-2xl md:text-3xl tracking-[0.18em] text-amber-200 uppercase mb-2">
+  MC
+</p>
+
+        <h1
+  class="font-display font-extrabold text-5xl sm:text-7xl md:text-8xl tracking-wide text-amber-200 uppercase leading-none drop-shadow-[0_4px_16px_rgba(245,158,11,0.35)] mb-4"
+>
+  TÂY PHONG
+</h1>
+
+        <div
+          class="inline-flex flex-wrap items-center justify-center md:justify-start gap-2.5 sm:gap-5 px-4 py-2 md:px-5 md:py-2.5 rounded-xl md:rounded-2xl bg-black/35 border border-amber-400/30 backdrop-blur-sm mb-4 md:mb-6"
+        >
+          <span
+            class="font-display font-bold text-xs sm:text-base md:text-lg tracking-wider text-white"
+          >
+            HEIGHT: <span class="text-amber-300">1,70</span>
+          </span>
+          <span class="text-amber-400/60 font-bold">-</span>
+          <span
+            class="font-display font-bold text-xs sm:text-base md:text-lg tracking-wider text-white"
+          >
+            WEIGHT: <span class="text-amber-300">74KG</span>
+          </span>
+        </div>
+
+        <div class="space-y-2 md:space-y-3 text-xs sm:text-base md:text-lg w-full max-w-md mb-5 md:mb-8">
+          <a
+            href="mailto:tayphongevent@gmail.com"
+            class="flex items-center justify-center md:justify-start gap-2.5 md:gap-3 px-3.5 py-2 md:px-4 md:py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"
+          >
+            <span
+              class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-600 text-white font-bold text-xs flex items-center justify-center shrink-0 shadow"
+              >M</span
+            >
+            <span class="font-medium tracking-wide text-amber-50">
+              Gmail : <strong class="font-semibold text-white">tayphongevent</strong>
+            </span>
+          </a>
+
+          <a
+            href="https://www.facebook.com/share/1Du4fcUdgt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center md:justify-start gap-2.5 md:gap-3 px-3.5 py-2 md:px-4 md:py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"
+          >
+            <span
+              class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-sky-600 text-white font-bold text-sm flex items-center justify-center shrink-0 shadow"
+              >f</span
+            >
+            <span class="font-medium tracking-wide text-amber-50">
+              FB : <strong class="font-semibold text-white">Phong Mien Tay</strong>
+            </span>
+          </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center md:justify-start gap-2.5 md:gap-3">
+          <a
+            href="#services"
+            class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-amber-500 text-zinc-950 font-semibold px-4 py-2.5 md:px-6 md:py-3 rounded-full hover:from-amber-300 hover:to-amber-400 transition-all text-xs md:text-sm shadow-lg"
+          >
+            Xem kinh nghiệm &amp; thế mạnh
+          </a>
+          <a
+            href="#work"
+            class="inline-flex items-center gap-2 border border-amber-300/40 bg-black/25 text-amber-100 font-medium px-4 py-2.5 md:px-6 md:py-3 rounded-full hover:bg-white/10 transition-colors text-xs md:text-sm"
+          >
+            Chương trình đã dẫn
+          </a>
         </div>
       </div>
     </div>
@@ -564,464 +542,781 @@
 </section>
 
       <!-- ═══ SERVICES ═══ -->
-      <section id="services" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
-        <div class="max-w-6xl mx-auto px-6">
-          <div class="mb-14">
-            <p
-              class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3"
-            >
-              TRương trình &amp; sự kiện
-            </p>
-            <h2
-              class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white"
-            >
-              Trương trình truyền hình đã tham gia 
-            </h2>
-          </div>
-          <div class="grid md:grid-cols-3 gap-6">
-            <article class="card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
-  <div class="pf w-full h-52">
-    <img src="images/quyong.jpg" alt="Tây Phong tại chương trình Quý Ông Hoàn Hảo" class="object-top" loading="lazy">
-  </div>
-  <div class="p-6">
-    <div class="flex flex-wrap gap-2 mb-3">
-      <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">Gameshow / THVL1</span>
-      <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Giao lưu sân khấu</span>
-    </div>
-    <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">Quý Ông Hoàn Hảo</h3>
-    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-      Tham gia chương trình Quý Ông Hoàn Hảo (THVL1), Tây Phong ghi dấu ấn với phong cách tự nhiên, vui tươi và giàu năng lượng tương tác. Sự cởi mở, duyên dáng trên sân khấu giúp tạo nên không khí giải trí gần gũi và hào hứng cho người xem.
-    </p>
-  </div>
-</article>
+      <section id="services"
+  class="relative min-h-screen flex flex-col justify-center py-24 sm:py-28 md:py-32 overflow-hidden bg-gradient-to-br from-[#2b0907] via-[#4a0e0a] to-[#1a0504] text-white"
+>
+  <!-- Ánh sáng cam ấm đồng bộ với phần Hero -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(circle_at_25%_40%,rgba(245,158,11,0.22),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(234,88,12,0.25),transparent_60%)] pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute -bottom-16 left-10 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute top-1/3 right-10 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <!-- Ánh sáng vàng ấm & bokeh sân khấu -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(circle_at_22%_45%,rgba(245,158,11,0.22),transparent_55%),radial-gradient(circle_at_80%_25%,rgba(251,191,36,0.12),transparent_60%)] pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute top-1/2 -left-16 w-72 h-72 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute bottom-0 right-10 w-80 h-80 bg-amber-400/10 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
 
-            <article class="card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
-  <div class="pf w-full h-52">
-    <!-- SỬA: Thay bằng file ảnh chương trình Vừng Ơi Mở Cửa trong thư mục images/ -->
-    <img src="images/vungoi.jpg" alt="MC Tây Phong tại chương trình Vừng Ơi Mở Cửa" loading="lazy">
-  </div>
-  <div class="p-6">
-    <div class="flex flex-wrap gap-2 mb-3">
-      <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">Gameshow / Truyền hình</span>
-      <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Hoạt náo</span>
-    </div>
-    <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">Vừng Ơi Mở Cửa</h3>
-    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-      Góp mặt tại chương trình Vừng Ơi Mở Cửa, MC Tây Phong mang đến năng lượng trẻ trung, hài hước và khả năng tương tác linh hoạt cùng người chơi lẫn khán giả. Anh giúp các phần thử thách, trò chơi diễn ra sôi nổi, tự nhiên và giữ nhịp giải trí xuyên suốt chương trình, tạo nên những phút giây vui tươi đáng nhớ cho người xem.
-    </p>
-  </div>
-</article>
-
-           <article class="card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
-  <div class="pf w-full h-52">
-    <!-- SỬA: Thay bằng tên file ảnh thực tế trong thư mục images/ -->
-    <img src="images/khoanhkhac.jpg" alt="Tây Phong tại chương trình Khoảnh Khắc Cuộc Đời" class="object-top" loading="lazy">
-  </div>
-  <div class="p-6">
-    <div class="flex flex-wrap gap-2 mb-3">
-      <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">Talkshow / Truyền hình</span>
-      <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">Chia sẻ &amp; Cảm xúc</span>
-    </div>
-    <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">Khoảnh Khắc Cuộc Đời</h3>
-    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-      Góp mặt tại chương trình Khoảnh Khắc Cuộc Đời, Tây Phong mang đến những chia sẻ chân thành, tự nhiên và gần gũi về hành trình cùng góc nhìn sống tích cực. Cách trò chuyện mộc mạc giúp câu chuyện thêm cuốn hút và để lại sự đồng cảm cho người xem.
-    </p>
-  </div>
-</article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══ WORK ═══ -->
-      <section id="work" class="py-24">
-        <div class="max-w-6xl mx-auto px-6">
-          <div
-            class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14"
-          >
-            <div>
-              <p
-                class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3"
-              >
-              </p>
-              <h2
-                class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white"
-              >
-                Sự kiện tiêu biểu
-              </h2>
-            </div>
-            <a
-              href="projects.html"
-              class="reveal d1 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-accent transition-colors self-start sm:self-auto nl"
-              ></a
-            >
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-6">
-            <!-- SỬA: Thay nội dung và ảnh bằng sự kiện tiêu biểu của MC Tây Phong -->
-            <article
-              class="card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent md:row-span-2"
-            >
-              <div class="pf w-full h-64 md:h-80">
-                <img
-                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&amp;q=80"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-7">
-                <div class="flex flex-wrap gap-2 mb-4">
-                </div>
-                <a href="case-study.html">
-                  <h3
-                    class="font-display font-bold text-2xl text-zinc-900 dark:text-white mb-2"
-                    Gala Tri Ân &amp; Gắn Kết Nội Bộ
-                  </h3>
-                </a>
-                <p
-                  class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-5"
-                >
-                  Điều phối kịch bản xuyên suốt từ phần khai mạc, vinh danh đến
-                  các tiết mục giao lưu và bốc thăm trúng thưởng. Giữ không khí
-                  sôi nổi nhưng vẫn đảm bảo sự chỉn chu cho ban lãnh đạo và
-                  khách mời.
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent"
-            >
-              <div class="pf w-full h-48">
-                <img
-                  src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&amp;q=80"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-6">
-                <div class="flex flex-wrap gap-2 mb-3">
-                </div>
-                <a href="case-study.html">
-                  <h3
-                    class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-1.5"
-                  >
-                  </h3>
-                </a>
-                <p
-                  class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4"
-                >
-                  Kịch bản cá nhân hóa theo câu chuyện tình yêu của cô dâu chú
-                  rể, dẫn dắt tinh tế, đúng mực và giàu cảm xúc.
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent"
-            >
-              <div class="pf w-full h-48">
-                <img
-                  src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&amp;q=80"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-6">
-                <div class="flex flex-wrap gap-2 mb-3">
-                </div>
-                <a href="case-study.html">
-                  <h3
-                    class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-1.5"
-                  >
-                  </h3>
-                </a>
-                <p
-                  class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4"
-                >
-                  Mở màn rộn ràng, giới thiệu điểm nhấn sản phẩm/dịch vụ rõ ràng
-                  và khuấy động không khí suốt buổi lễ.
-                </p>
-                
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══ ABOUT ═══ -->
-      <section id="reviews" class="py-24">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="mb-14">
+  <div class="relative z-10 max-w-6xl mx-auto px-3 sm:px-6 w-full">
+    <!-- Tiêu đề lớn -->
+    <div class="mb-10 sm:mb-14 md:mb-16 text-center md:text-left">
       <p
-        class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3"
+        class="reveal text-[11px] sm:text-xs md:text-sm font-semibold text-amber-300 tracking-[0.2em] uppercase mb-2"
+      >
+        Hồ sơ năng lực
+      </p>
+      <h2
+        class="reveal d1 font-display font-extrabold text-2xl sm:text-4xl md:text-5xl uppercase tracking-wide bg-gradient-to-r from-amber-100 via-amber-300 to-amber-500 bg-clip-text text-transparent"
+      >
+        KINH NGHIỆM và THẾ MẠNH
+      </h2>
+    </div>
+
+    <!-- Bố cục 2 cột: Ảnh cao bên trái - Nội dung trải dài cân đối bên phải -->
+    <div class="grid grid-cols-12 gap-3 sm:gap-6 md:gap-10 items-stretch">
+      <!-- CỘT TRÁI: Ảnh dáng đứng cao hơn -->
+      <div class="reveal d1 col-span-5 flex flex-col">
+        <div class="w-full max-w-sm mx-auto flex-1 flex flex-col">
+          <div
+            class="flex-1 rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden border border-amber-400/45 md:border-2 shadow-[0_14px_35px_rgba(0,0,0,0.65)] bg-black/30 aspect-[2/3] min-h-[260px] sm:min-h-[380px]"
+          >
+            <img
+              src="images/kn.jpg"
+              alt="MC Tây Phong - Kinh nghiệm và Thế mạnh"
+              class="w-full h-full object-cover object-top"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="mt-3 text-center bg-black/35 border border-amber-400/25 rounded-lg sm:rounded-xl py-1.5 sm:py-2.5 px-2 sm:px-4 backdrop-blur-sm"
+          >
+            <span class="font-display font-bold text-amber-300 uppercase tracking-wider text-[10px] sm:text-xs md:text-sm">
+              MC TÂY PHONG
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CỘT PHẢI: KINH NGHIỆM (trên) & THẾ MẠNH (dưới) giãn đều chiều cao -->
+      <div class="reveal d2 col-span-7 flex flex-col justify-between gap-4 sm:gap-6 md:gap-8">
+        <!-- Khối KINH NGHIỆM -->
+        <div class="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-black/30 border border-amber-400/25 p-3.5 sm:p-6 md:p-8 backdrop-blur-sm">
+          <h3
+            class="font-display font-bold text-xs sm:text-lg md:text-xl uppercase tracking-wider text-amber-300 flex items-center gap-1.5 sm:gap-2 mb-3 sm:mb-4"
+          >
+            <span class="text-amber-400 text-[10px] sm:text-base">◆</span>
+            <span>KINH NGHIỆM</span>
+          </h3>
+          <ul class="space-y-2.5 sm:space-y-3.5 text-[11px] sm:text-sm md:text-base text-amber-50/95 leading-relaxed">
+            <li class="flex items-start gap-1.5 sm:gap-2.5">
+              <span class="text-amber-400 font-bold shrink-0">•</span>
+              <span>Trên 10 năm trong lĩnh vực dẫn chương trình</span>
+            </li>
+            <li class="flex items-start gap-1.5 sm:gap-2.5">
+              <span class="text-amber-400 font-bold shrink-0">•</span>
+              <span>Khả năng làm chủ sân khấu, khuấy động không khí</span>
+            </li>
+            <li class="flex items-start gap-1.5 sm:gap-2.5">
+              <span class="text-amber-400 font-bold shrink-0">•</span>
+              <span>Giao tiếp linh hoạt, xử lí tình huống nhanh nhạy</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Khối THẾ MẠNH -->
+        <div class="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-black/30 border border-amber-400/25 p-3.5 sm:p-6 md:p-8 backdrop-blur-sm">
+          <h3
+            class="font-display font-bold text-xs sm:text-lg md:text-xl uppercase tracking-wider text-amber-300 flex items-center gap-1.5 sm:gap-2 mb-3 sm:mb-4"
+          >
+            <span class="text-amber-400 text-[10px] sm:text-base">◆</span>
+            <span>THẾ MẠNH</span>
+          </h3>
+          <ul class="space-y-2.5 sm:space-y-3.5 text-[11px] sm:text-sm md:text-base text-amber-50/95 leading-relaxed">
+            <li class="flex items-start gap-1.5 sm:gap-2.5">
+              <span class="text-amber-400 font-bold shrink-0">•</span>
+              <span>Các chương trình mang tính chất hoạt náo, giao lưu khán giả, kết nối người chơi, khuấy động không khí...</span>
+            </li>
+            <li class="flex items-start gap-1.5 sm:gap-2.5">
+              <span class="text-amber-400 font-bold shrink-0">•</span>
+              <span>Sự kiện khai trương, tân niên, tất niên, sinh nhật...</span>
+            </li>
+            <li class="flex items-start gap-1.5 sm:gap-2.5">
+              <span class="text-amber-400 font-bold shrink-0">•</span>
+              <span>Sân khấu ngoài trời, teambuilding...</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- ═══ trangphuc va phong cach ═══ -->
+     <section
+  id="blog"
+  class="relative min-h-screen flex flex-col justify-center py-14 sm:py-20 md:py-24 overflow-hidden bg-gradient-to-br from-[#2b0907] via-[#4a0e0a] to-[#1a0504] text-white"
+>
+  <!-- Ánh sáng cam ấm đồng bộ -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(circle_at_25%_40%,rgba(245,158,11,0.22),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(234,88,12,0.25),transparent_60%)] pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute -bottom-16 left-10 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute top-1/3 right-10 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-3 sm:px-6 w-full flex-1 flex flex-col justify-center">
+    <!-- Tiêu đề lớn -->
+    <div class="mb-6 sm:mb-10 md:mb-12 text-center md:text-left">
+      <h2
+        class="reveal d1 font-display font-extrabold text-xl sm:text-4xl md:text-5xl uppercase tracking-wide bg-gradient-to-r from-amber-100 via-amber-300 to-orange-400 bg-clip-text text-transparent"
+      >
+        PHONG CÁCH và TRANG PHỤC
+      </h2>
+    </div>
+
+    <!-- Bố cục 2 cột phủ đều chiều cao: Nội dung bên trái (7) - Ảnh phủ kín ô bên phải (5) -->
+    <div class="grid grid-cols-12 gap-3 sm:gap-6 md:gap-8 items-stretch">
+      <!-- CỘT TRÁI: NỘI DUNG PHỦ ĐỀU -->
+      <div class="reveal d1 col-span-7 flex flex-col gap-3 sm:gap-5">
+        <!-- Khối Phong cách -->
+        <div class="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-black/30 border border-orange-400/25 p-3.5 sm:p-6 md:p-7 backdrop-blur-sm">
+          <div class="flex items-start gap-2 sm:gap-3">
+            <span class="text-orange-400 font-bold text-xs sm:text-base mt-0.5 shrink-0">•</span>
+            <div>
+              <h3 class="font-display font-bold text-xs sm:text-lg md:text-xl text-amber-300 mb-1.5 sm:mb-2.5">
+                Phong cách: duyên dáng, hoạt náo, gần gũi....
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khối Trang phục -->
+        <div class="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-black/30 border border-orange-400/25 p-3.5 sm:p-6 md:p-7 backdrop-blur-sm">
+          <div class="flex items-start gap-2 sm:gap-3">
+            <span class="text-orange-400 font-bold text-xs sm:text-base mt-0.5 shrink-0">•</span>
+            <div>
+              <h3 class="font-display font-bold text-xs sm:text-lg md:text-xl text-amber-300 mb-1.5 sm:mb-2.5">
+                Trang phục : đa dạng, phù hợp theo từng tính chất và yêu cầu của chương trình
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CỘT PHẢI: 3 Ô ẢNH PHỦ KÍN TỪNG Ô -->
+      <div class="reveal d2 col-span-5 flex flex-col gap-3 sm:gap-5">
+        <!-- Ô ảnh 1 -->
+        <article
+          class="card-h group flex-1 min-h-[110px] sm:min-h-[150px] rounded-xl sm:rounded-2xl overflow-hidden bg-black/35 border border-orange-400/30 hover:border-amber-400/70 transition-colors"
+        >
+          <img
+            src="images/tp4.jpg"
+            alt="Trang phục hoạt náo, chú hề"
+            class="w-full h-full object-cover object-top"
+            loading="lazy"
+          />
+        </article>
+
+        <!-- Ô ảnh 2 -->
+        <article
+          class="card-h group flex-1 min-h-[110px] sm:min-h-[150px] rounded-xl sm:rounded-2xl overflow-hidden bg-black/35 border border-orange-400/30 hover:border-amber-400/70 transition-colors"
+        >
+          <img
+            src="images/tp2.jpg"
+            alt="Trang phục MC sự kiện"
+            class="w-full h-full object-cover object-top"
+            loading="lazy"
+          />
+        </article>
+
+        <!-- Ô ảnh 3 -->
+        <article
+          class="card-h group flex-1 min-h-[110px] sm:min-h-[150px] rounded-xl sm:rounded-2xl overflow-hidden bg-black/35 border border-orange-400/30 hover:border-amber-400/70 transition-colors"
+        >
+          <img
+            src="images/tp3.jpg"
+            alt="Trang phục MC chương trình truyền thống"
+            class="w-full h-full object-cover object-top"
+            loading="lazy"
+          />
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- ═══ trang bao lien quan ═══ -->
+      <section
+  id="reviews"
+  class="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-[#2b0907] via-[#4a0e0a] to-[#1a0504] text-white"
+>
+  <!-- Ánh sáng cam ấm đồng bộ -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(circle_at_25%_40%,rgba(245,158,11,0.22),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(234,88,12,0.25),transparent_60%)] pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute -bottom-16 left-10 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute top-1/3 right-10 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full">
+    <!-- Tiêu đề -->
+    <div class="mb-8 md:mb-12 text-center md:text-left">
+      <p
+        class="reveal text-xs md:text-sm font-semibold text-amber-300 tracking-[0.2em] uppercase mb-1.5"
       >
         Các Trang báo
       </p>
       <h2
-        class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white"
+        class="reveal d1 font-display font-extrabold text-2xl sm:text-4xl md:text-5xl uppercase tracking-wide bg-gradient-to-r from-amber-100 via-amber-300 to-orange-400 bg-clip-text text-transparent"
       >
         Bài viết liên quan
       </h2>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- SỬA: Ảnh bài báo 1 (đang trỏ đúng images/bao1.jpg) -->
-      <article
-        class="reveal d1 card-h group rounded-2xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent"
-      >
-        <div class="pf w-full aspect-[9/16]">
-          <img
-            src="images/bao1.jpg"
-            alt="Bài báo liên quan MC Tây Phong 1"
-            class="!object-contain"
-            loading="lazy"
-          />
+    <!-- Khối danh sách các trang báo -->
+    <div class="reveal d1 rounded-2xl bg-black/30 border border-orange-400/25 p-5 sm:p-6 mb-8 md:mb-10 backdrop-blur-sm">
+      <h3 class="font-display font-bold text-base sm:text-lg md:text-xl text-amber-300 mb-3.5 flex items-center gap-2">
+        <span class="text-orange-400">◆</span>
+        <span>Các trang báo:</span>
+      </h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3 text-xs sm:text-sm md:text-base text-amber-50/95">
+        <div class="flex items-center gap-2 rounded-xl bg-black/25 border border-orange-400/15 px-3 py-2">
+          <span class="text-orange-400 font-bold">•</span>
+          <span>VnExpress.net</span>
         </div>
+        <div class="flex items-center gap-2 rounded-xl bg-black/25 border border-orange-400/15 px-3 py-2">
+          <span class="text-orange-400 font-bold">•</span>
+          <span>Saodoanhnhan.net</span>
+        </div>
+        <div class="flex items-center gap-2 rounded-xl bg-black/25 border border-orange-400/15 px-3 py-2">
+          <span class="text-orange-400 font-bold">•</span>
+          <span>Sandien24h</span>
+        </div>
+        <div class="flex items-center gap-2 rounded-xl bg-black/25 border border-orange-400/15 px-3 py-2">
+          <span class="text-orange-400 font-bold">•</span>
+          <span>Nguoinoitieng</span>
+        </div>
+        <div class="flex items-center gap-2 rounded-xl bg-black/25 border border-orange-400/15 px-3 py-2">
+          <span class="text-orange-400 font-bold">•</span>
+          <span>Baomoi</span>
+        </div>
+        <div class="flex items-center gap-2 rounded-xl bg-black/25 border border-orange-400/15 px-3 py-2">
+          <span class="text-orange-400 font-bold">•</span>
+          <span>HTV</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lưới 4 ảnh bài báo: bấm vào từng ảnh để phóng to xem rõ -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5 md:gap-6">
+      <article
+        class="reveal d1 card-h group rounded-xl sm:rounded-2xl overflow-hidden bg-black/35 border border-orange-400/25 hover:border-amber-400/70 transition-colors p-2 sm:p-2.5 backdrop-blur-sm"
+      >
+        <button
+          type="button"
+          data-press-src="images/bao1.jpg"
+          data-press-alt="Bài báo liên quan MC Tây Phong 1"
+          class="press-open-btn block w-full text-left cursor-zoom-in focus:outline-none"
+          aria-label="Xem phóng to Bài báo liên quan MC Tây Phong 1"
+        >
+          <div class="pf w-full aspect-[3/4] rounded-lg sm:rounded-xl overflow-hidden bg-black/40">
+            <img
+              src="images/bao1.jpg"
+              alt="Bài báo liên quan MC Tây Phong 1"
+              class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="mt-2 text-center text-[11px] sm:text-xs text-amber-300/90 font-medium">
+            Chạm để xem rõ
+          </div>
+        </button>
       </article>
 
-      <!-- SỬA: Thay src bằng ảnh bài báo 2 (dạng dọc) -->
       <article
-        class="reveal d2 card-h group rounded-2xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent"
+        class="reveal d2 card-h group rounded-xl sm:rounded-2xl overflow-hidden bg-black/35 border border-orange-400/25 hover:border-amber-400/70 transition-colors p-2 sm:p-2.5 backdrop-blur-sm"
       >
-        <div class="pf w-full aspect-[9/16]">
-          <img
-            src="images/bao2.jpg"
-            alt="Bài báo liên quan MC Tây Phong 2"
-            class="!object-contain"
-            loading="lazy"
-          />
-        </div>
+        <button
+          type="button"
+          data-press-src="images/bao2.jpg"
+          data-press-alt="Bài báo liên quan MC Tây Phong 2"
+          class="press-open-btn block w-full text-left cursor-zoom-in focus:outline-none"
+          aria-label="Xem phóng to Bài báo liên quan MC Tây Phong 2"
+        >
+          <div class="pf w-full aspect-[3/4] rounded-lg sm:rounded-xl overflow-hidden bg-black/40">
+            <img
+              src="images/bao2.jpg"
+              alt="Bài báo liên quan MC Tây Phong 2"
+              class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="mt-2 text-center text-[11px] sm:text-xs text-amber-300/90 font-medium">
+            Chạm để xem rõ
+          </div>
+        </button>
       </article>
 
-      <!-- SỬA: Thay src bằng ảnh bài báo 3 (dạng dọc) -->
       <article
-        class="reveal d3 card-h group rounded-2xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent"
+        class="reveal d3 card-h group rounded-xl sm:rounded-2xl overflow-hidden bg-black/35 border border-orange-400/25 hover:border-amber-400/70 transition-colors p-2 sm:p-2.5 backdrop-blur-sm"
       >
-        <div class="pf w-full aspect-[9/16]">
-          <img
-            src="images/bao3.jpg"
-            alt="Bài báo liên quan MC Tây Phong 3"
-            class="!object-contain"
-            loading="lazy"
-          />
-        </div>
+        <button
+          type="button"
+          data-press-src="images/bao3.jpg"
+          data-press-alt="Bài báo liên quan MC Tây Phong 3"
+          class="press-open-btn block w-full text-left cursor-zoom-in focus:outline-none"
+          aria-label="Xem phóng to Bài báo liên quan MC Tây Phong 3"
+        >
+          <div class="pf w-full aspect-[3/4] rounded-lg sm:rounded-xl overflow-hidden bg-black/40">
+            <img
+              src="images/bao3.jpg"
+              alt="Bài báo liên quan MC Tây Phong 3"
+              class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="mt-2 text-center text-[11px] sm:text-xs text-amber-300/90 font-medium">
+            Chạm để xem rõ
+          </div>
+        </button>
       </article>
+
       <article
-        class="reveal d4 card-h group rounded-2xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent"
+        class="reveal d4 card-h group rounded-xl sm:rounded-2xl overflow-hidden bg-black/35 border border-orange-400/25 hover:border-amber-400/70 transition-colors p-2 sm:p-2.5 backdrop-blur-sm"
       >
-        <div class="pf w-full aspect-[9/16]">
-          <img
-            src="images/bao4.jpg"
-            alt="Bài báo liên quan MC Tây Phong 4"
-            class="!object-contain"
-            loading="lazy"
-          />
-        </div>
+        <button
+          type="button"
+          data-press-src="images/bao4.jpg"
+          data-press-alt="Bài báo liên quan MC Tây Phong 4"
+          class="press-open-btn block w-full text-left cursor-zoom-in focus:outline-none"
+          aria-label="Xem phóng to Bài báo liên quan MC Tây Phong 4"
+        >
+          <div class="pf w-full aspect-[3/4] rounded-lg sm:rounded-xl overflow-hidden bg-black/40">
+            <img
+              src="images/bao4.jpg"
+              alt="Bài báo liên quan MC Tây Phong 4"
+              class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="mt-2 text-center text-[11px] sm:text-xs text-amber-300/90 font-medium">
+            Chạm để xem rõ
+          </div>
+        </button>
       </article>
-      
+    </div>
+  </div>
+
+  <!-- Khung xem phóng to ảnh bài báo -->
+  <div
+    id="press-lightbox"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 p-3 sm:p-6 backdrop-blur-sm"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Xem ảnh bài báo phóng to"
+  >
+    <div class="relative max-w-3xl w-full max-h-[90vh] flex flex-col items-center justify-center">
+      <button
+        id="press-lightbox-close"
+        type="button"
+        class="self-end mb-2.5 rounded-full bg-white/15 hover:bg-white/25 text-white px-4 py-1.5 text-xs sm:text-sm font-semibold border border-white/20 transition-colors"
+      >
+        Đóng ✕
+      </button>
+      <div class="w-full overflow-auto rounded-2xl bg-zinc-950/90 border border-amber-400/30 p-2 sm:p-4 flex justify-center">
+        <img
+          id="press-lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[78vh] w-auto object-contain rounded-lg"
+        />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const modal = document.getElementById("press-lightbox");
+      const modalImg = document.getElementById("press-lightbox-img");
+      const closeBtn = document.getElementById("press-lightbox-close");
+      const triggers = document.querySelectorAll(".press-open-btn");
+
+      if (!modal || !modalImg || !closeBtn || !triggers.length) return;
+
+      function openModal(src, alt) {
+        modalImg.src = src;
+        modalImg.alt = alt || "Ảnh bài báo";
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        modalImg.src = "";
+        document.body.style.overflow = "";
+      }
+
+      triggers.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          openModal(btn.dataset.pressSrc, btn.dataset.pressAlt);
+        });
+      });
+
+      closeBtn.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+</section>
+
+      <!-- ═══ chương trình đã dẫn  ═══ -->
+      <section
+  id="work"
+  class="relative py-20 md:py-24 overflow-hidden bg-gradient-to-br from-[#2b0907] via-[#4a0e0a] to-[#1a0504] text-white"
+>
+  <!-- Ánh sáng cam ấm đồng bộ -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(circle_at_25%_40%,rgba(245,158,11,0.22),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(234,88,12,0.25),transparent_60%)] pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute -bottom-16 left-10 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute top-1/3 right-10 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full">
+    <!-- Tiêu đề phần Sự kiện tiêu biểu -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 md:mb-12">
+      <div>
+        <p
+          class="reveal text-xs font-semibold text-amber-300 tracking-[0.2em] uppercase mb-2"
+        >
+          Hồ sơ sự kiện
+        </p>
+        <h2
+          class="reveal d1 font-display font-extrabold text-3xl sm:text-4xl md:text-5xl uppercase tracking-wide bg-gradient-to-r from-amber-100 via-amber-300 to-orange-400 bg-clip-text text-transparent"
+        >
+          Sự kiện tiêu biểu
+        </h2>
+      </div>
+    </div>
+
+    <!-- Khối danh sách CÁC CHƯƠNG TRÌNH ĐÃ DẪN -->
+    <div class="reveal d1 rounded-2xl bg-black/30 border border-orange-400/25 p-5 sm:p-7 mb-10 md:mb-12 backdrop-blur-sm">
+      <h3 class="font-display font-bold text-lg sm:text-xl md:text-2xl uppercase tracking-wider text-amber-300 flex items-center gap-2.5 mb-4">
+        <span class="text-orange-400">◆</span>
+        <span>CÁC CHƯƠNG TRÌNH ĐÃ DẪN:</span>
+      </h3>
+      <ul class="grid sm:grid-cols-2 gap-3 text-xs sm:text-sm md:text-base text-amber-50/95 leading-relaxed">
+        <li class="flex items-start gap-2.5 rounded-xl bg-black/25 border border-orange-400/15 px-3.5 py-2.5">
+          <span class="text-orange-400 font-bold shrink-0">•</span>
+          <span>Kỷ Niệm 160 Năm Ngày Thành Lập Thảo Cầm Viên Sài Gòn</span>
+        </li>
+        <li class="flex items-start gap-2.5 rounded-xl bg-black/25 border border-orange-400/15 px-3.5 py-2.5">
+          <span class="text-orange-400 font-bold shrink-0">•</span>
+          <span>Lễ Hội Hoa Xuân Tại Bờ Hồ Trúc Giang - Tỉnh Bến Tre</span>
+        </li>
+        <li class="flex items-start gap-2.5 rounded-xl bg-black/25 border border-orange-400/15 px-3.5 py-2.5">
+          <span class="text-orange-400 font-bold shrink-0">•</span>
+          <span>Lễ Ra Mắt Chính Thức Công Ty Cổ Phần Quốc Tế JYK</span>
+        </li>
+        <li class="flex items-start gap-2.5 rounded-xl bg-black/25 border border-orange-400/15 px-3.5 py-2.5">
+          <span class="text-orange-400 font-bold shrink-0">•</span>
+          <span>Chương Trình Tất Niên Bệnh Viện Nhi Đồng Thành Phố</span>
+        </li>
+        <li class="flex items-start gap-2.5 rounded-xl bg-black/25 border border-orange-400/15 px-3.5 py-2.5">
+          <span class="text-orange-400 font-bold shrink-0">•</span>
+          <span>Sự Kiện Tri Ân Khách Hàng Của Công Ty Cổ Phần Thương Mại Intend Pharma</span>
+        </li>
+        <li class="flex items-start gap-2.5 rounded-xl bg-black/25 border border-orange-400/15 px-3.5 py-2.5">
+          <span class="text-orange-400 font-bold shrink-0">•</span>
+          <span>Chương Trình Gặp Mặt Đầu Năm - Trung Tâm Công Nghệ Môi Trường</span>
+        </li>
+        <li class="flex items-start gap-2.5 rounded-xl bg-black/25 border border-orange-400/15 px-3.5 py-2.5">
+          <span class="text-orange-400 font-bold shrink-0">•</span>
+          <span>Sự Kiện Lễ Hội Ẩm Thực "Non Sông Thống Nhất" Tại Thảo Cầm Viên Sài Gòn</span>
+        </li>
+        <li class="flex items-start gap-2.5 rounded-xl bg-black/25 border border-orange-400/15 px-3.5 py-2.5">
+          <span class="text-orange-400 font-bold shrink-0">•</span>
+          <span>Chương Trình Họp Mặt Cuối Năm Công Ty Bê Tông Hoàng Sở</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Lưới ảnh sự kiện đồng đều chiều cao -->
+    <div class="grid grid-cols-2 gap-4 sm:gap-6">
+  <article
+    class="card-h reveal d1 group rounded-2xl overflow-hidden bg-black/35 border border-orange-400/25 hover:border-amber-400/70 transition-colors backdrop-blur-sm"
+  >
+    <div class="pf w-full aspect-[4/3] overflow-hidden bg-black/40">
+      <!-- SỬA: Đổi sang tên file ảnh thực tế trong thư mục images/ nếu có -->
+      <img
+        src="images/lhat.jpg"
+        alt="Ảnh sự kiện 1"
+        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+  </article>
+
+  <article
+    class="card-h reveal d2 group rounded-2xl overflow-hidden bg-black/35 border border-orange-400/25 hover:border-amber-400/70 transition-colors backdrop-blur-sm"
+  >
+    <div class="pf w-full aspect-[4/3] overflow-hidden bg-black/40">
+      <!-- SỬA: Đổi sang tên file ảnh thực tế trong thư mục images/ nếu có -->
+      <img
+        src="images/bvnd.jpg"
+        alt="Ảnh sự kiện 2"
+        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+  </article>
+
+  <article
+    class="card-h reveal d3 group rounded-2xl overflow-hidden bg-black/35 border border-orange-400/25 hover:border-amber-400/70 transition-colors backdrop-blur-sm"
+  >
+    <div class="pf w-full aspect-[4/3] overflow-hidden bg-black/40">
+      <!-- SỬA: Đổi sang tên file ảnh thực tế trong thư mục images/ nếu có -->
+      <img
+        src="images/tbt.jpg"
+        alt="Ảnh sự kiện 3"
+        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+  </article>
+
+  <article
+    class="card-h reveal d4 group rounded-2xl overflow-hidden bg-black/35 border border-orange-400/25 hover:border-amber-400/70 transition-colors backdrop-blur-sm"
+  >
+    <div class="pf w-full aspect-[4/3] overflow-hidden bg-black/40">
+      <!-- SỬA: Đổi sang tên file ảnh thực tế trong thư mục images/ nếu có -->
+      <img
+        src="images/kntcv.jpg"
+        alt="Ảnh sự kiện 4"
+        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+  </article>
+</div>
+      </article>
     </div>
   </div>
 </section>
 
-      <!-- ═══ BLOG / CHIA SẺ ═══ -->
-      <section id="blog" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
-        <div class="max-w-6xl mx-auto px-6">
-          <div
-            class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14"
-          >
-            <div>
-              <p
-                class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3"
-              >
-                Phong Cách và Trang Phục
-              </p>
-              <h2
-              >
-                Phong cách: đa dạng
-              </h2>
-              <h3>Trang phục: phù hợp theo từng tính chất của chương trình</h3>
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-6">
-            <article
-              class="reveal d1 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent"
-            >
-              <div class="pf w-full h-44">
-                <img
-                  src="images/tp1.jpg"
-                  alt="Chuẩn bị trước giờ lên sân khấu"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-6">
-                <div class="flex items-center gap-3 mb-3">
-                  <span
-                    class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-1 rounded-full"
-                    >CHú hề </span
-                  >
-                  <span class="text-xs text-zinc-400">2026</span>
-                </div>
-                  <h3
-                    class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors"
-                  >
-                    Rực rỡ, vui nhộn & hoạt náo: Trang phục họa tiết nhiều màu sắc kết hợp phụ kiện nổi bật, tạo cảm giác gần gũi và bắt mắt cho các chương trình thiếu nhi, hoạt náo.
-                  </h3>
-                </a>
-              </div>
-            </article>
-
-            <article
-              class="reveal d2 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent"
-            >
-              <div class="pf w-full h-44">
-                <img
-                  src="images/tp2.jpg"
-                  alt="Lên kịch bản tiệc cưới"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-6">
-                <div class="flex items-center gap-3 mb-3">
-                  <span
-                    class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-1 rounded-full"
-                    >MC sự kiện</span
-                  >
-                  <span class="text-xs text-zinc-400">2026</span>
-                </div>
-                  <h3
-                    class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors"
-                  >
-                    Lịch lãm, chỉn chu & chuyên nghiệp: Vest đen phối cùng quần tây và giày da trang nhã, phù hợp với không khí sự kiện.
-                  </h3>
-                </a>
-              </div>
-            </article>
-
-            <article
-              class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent"
-            >
-              <div class="pf w-full h-44">
-                <img
-                  src="images/tp3.jpg"
-                  alt="Phối hợp âm thanh sự kiện"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-6">
-                <div class="flex items-center gap-3 mb-3">
-                  <span
-                    class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-1 rounded-full"
-                    >MC chương trình</span
-                  >
-                  <span class="text-xs text-zinc-400">2026</span>
-                </div>
-                  <h3
-                    class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors"
-                  >
-                    Trang trọng, truyền thống & ấm áp: Áo dài đỏ nổi bật đi cùng quần tối màu và giày tây, hài hòa với các sự kiện lễ hội, gia đình hoặc dịp Tết.
-                  </h3>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <!-- ═══ CONTACT / BOOKING ═══ -->
-      <section id="contact" class="py-24">
-        <div class="max-w-6xl mx-auto px-6">
-          <div
-            class="bg-zinc-900 dark:bg-zinc-800 rounded-3xl p-10 md:p-16 relative overflow-hidden"
-          >
-            <div
-              class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none"
-              aria-hidden="true"
-            ></div>
-            <div
-              class="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full blur-2xl pointer-events-none"
-              aria-hidden="true"
-            ></div>
+      <section
+  id="contact"
+  class="relative min-h-screen flex flex-col justify-center py-16 md:py-24 overflow-hidden bg-gradient-to-br from-[#2b0907] via-[#4a0e0a] to-[#1a0504] text-white"
+>
+  <!-- Ánh sáng cam ấm đồng bộ -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(circle_at_25%_40%,rgba(245,158,11,0.22),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(234,88,12,0.25),transparent_60%)] pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute -bottom-16 left-10 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute top-1/3 right-10 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"
+    aria-hidden="true"
+  ></div>
 
-            <div class="relative z-10 grid md:grid-cols-2 gap-12 items-start">
-              <div>
-                <p
-                  class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3"
-                >
-                Thông điệp & liên hệ
-                </p>
-                <h2
-                  class="reveal d1 font-display font-bold text-4xl md:text-5xl text-white leading-tight mb-5"
-                >
-                  Liên hệ<br />MC Tây Phong
-                </h2>
-                <p class="reveal d2 text-zinc-400 leading-relaxed mb-8">
-                  “Tôi không chỉ dẫn dắt chương trình, tôi mong muốn trở thành một phần trong những khoảnh khắc đáng nhớ của bạn.”
-                </p>
-
-                <!-- SỬA: Thay email, điện thoại/Zalo và mạng xã hội thực tế của bạn -->
-                <div class="reveal d3 flex flex-col gap-4">
-  <a
-    href="mailto:tayphongevent@gmail.com"
-    class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors"
-  >
-    <span
-      class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0"
-    >
-      <svg
-        class="w-4 h-4"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        aria-hidden="true"
+  <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full">
+    <!-- Tiêu đề -->
+    <div class="mb-8 md:mb-12 text-center md:text-left">
+      <p
+        class="reveal text-xs md:text-sm font-semibold text-amber-300 tracking-[0.2em] uppercase mb-1.5"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-        />
-      </svg>
-    </span>
-    <span class="text-sm">tayphongevent@gmail.com</span>
-  </a>
+        Thông điệp &amp; Liên hệ
+      </p>
+      <h2
+        class="reveal d1 font-display font-extrabold text-2xl sm:text-4xl md:text-5xl uppercase tracking-wide bg-gradient-to-r from-amber-100 via-amber-300 to-orange-400 bg-clip-text text-transparent"
+      >
+        THÔNG ĐIỆP TỪ MC TÂY PHONG
+      </h2>
+    </div>
 
-  <a
-    href="https://www.facebook.com/share/1Du4fcUdgt/"
-    rel="noopener noreferrer"
-    target="_blank"
-    class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors"
-  >
-    <span
-      class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0"
-    >
-      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path
-          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-        />
-      </svg>
-    </span>
-    <span class="text-sm">FB : Phong Mien Tay</span>
-  </a>
-</div>
-                </div>
-              </div>
-
-              <div>
-                </form>
-              </div>
-            </div>
+    <!-- Bố cục 2 cột: Ảnh MC bên trái - Thông điệp chạy chữ lặp lại bên phải -->
+    <div class="grid grid-cols-12 gap-4 sm:gap-8 md:gap-10 items-center">
+      <!-- CỘT TRÁI: ẢNH MC -->
+      <div class="reveal d1 col-span-5 md:col-span-5 flex flex-col">
+        <div class="w-full max-w-xs sm:max-w-sm mx-auto">
+          <div
+            class="rounded-2xl md:rounded-3xl overflow-hidden border border-orange-400/45 md:border-2 shadow-[0_14px_35px_rgba(0,0,0,0.65)] bg-black/30 aspect-[3/4]"
+          >
+            <!-- SỬA: Đổi tên file ảnh MC nếu bạn dùng ảnh khác trong thư mục images/ -->
+            <img
+              src="images/td.jpg"
+              alt="MC Tây Phong"
+              class="w-full h-full object-cover object-top"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="mt-2.5 sm:mt-3 text-center bg-black/35 border border-orange-400/30 rounded-xl py-1.5 sm:py-2 px-3 backdrop-blur-sm"
+          >
+            <span class="font-display font-bold text-amber-300 uppercase tracking-wider text-xs sm:text-sm">
+              MC TÂY PHONG
+            </span>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="border-t border-zinc-100 dark:border-zinc-900">
-      <div
-        class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4"
-      >
-        <p class="text-sm text-zinc-400">
-          © <span id="yr"></span> MC Tây Phong. All rights reserved.
-        </p>
       </div>
-    </footer>
+
+      <!-- CỘT PHẢI: THÔNG ĐIỆP CHẠY CHỮ LẶP LẠI -->
+      <div class="reveal d2 col-span-7 md:col-span-7 flex flex-col justify-center">
+        <div class="rounded-2xl sm:rounded-3xl bg-black/35 border border-orange-400/30 p-4 sm:p-8 md:p-10 backdrop-blur-sm shadow-[0_16px_40px_rgba(0,0,0,0.45)]">
+          <p class="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-amber-300/90 mb-3">
+            Lời nhắn gửi
+          </p>
+
+          <blockquote
+            class="font-display font-bold text-sm sm:text-2xl md:text-3xl text-amber-100 leading-snug sm:leading-relaxed min-h-[5.5rem] sm:min-h-[8rem] md:min-h-[9.5rem]"
+          >
+            <span id="mc-typewriter-text"></span><span
+              aria-hidden="true"
+              class="inline-block w-[2px] sm:w-[3px] h-[1em] align-middle ml-0.5 bg-amber-300 animate-pulse"
+            ></span>
+          </blockquote>
+
+          <!-- Liên hệ nhanh -->
+          <div class="mt-6 pt-5 border-t border-orange-400/20 flex flex-col gap-3">
+            <a
+              href="mailto:tayphongevent@gmail.com"
+              class="group flex items-center gap-3 text-amber-50/85 hover:text-amber-300 transition-colors"
+            >
+              <span
+                class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center bg-orange-500/15 border border-orange-400/25 rounded-lg group-hover:bg-orange-500/25 transition-colors shrink-0"
+              >
+                <svg
+                  class="w-4 h-4 text-amber-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+              <span class="text-xs sm:text-sm break-all">tayphongevent@gmail.com</span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/1Du4fcUdgt/"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="group flex items-center gap-3 text-amber-50/85 hover:text-amber-300 transition-colors"
+            >
+              <span
+                class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center bg-orange-500/15 border border-orange-400/25 rounded-lg group-hover:bg-orange-500/25 transition-colors shrink-0"
+              >
+                <svg class="w-4 h-4 text-amber-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  />
+                </svg>
+              </span>
+              <span class="text-xs sm:text-sm">FB : Phong Mien Tay</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const targetEl = document.getElementById("mc-typewriter-text");
+      if (!targetEl) return;
+
+      const message =
+        "“Tôi không chỉ dẫn dắt chương trình, tôi mong muốn trở thành một phần trong những khoảnh khắc đáng nhớ của bạn.”";
+
+      const typeSpeed = 42;     // Tốc độ gõ từng ký tự (ms)
+      const deleteSpeed = 20;   // Tốc độ xóa khi lặp lại (ms)
+      const holdAfterType = 2200; // Thời gian dừng đọc sau khi gõ hết câu (ms)
+      const holdAfterDelete = 500; // Thời gian nghỉ trước khi gõ lại (ms)
+
+      let index = 0;
+      let isDeleting = false;
+
+      function tick() {
+        if (!isDeleting) {
+          index++;
+          targetEl.textContent = message.slice(0, index);
+
+          if (index === message.length) {
+            isDeleting = true;
+            setTimeout(tick, holdAfterType);
+            return;
+          }
+          setTimeout(tick, typeSpeed);
+        } else {
+          index--;
+          targetEl.textContent = message.slice(0, index);
+
+          if (index === 0) {
+            isDeleting = false;
+            setTimeout(tick, holdAfterDelete);
+            return;
+          }
+          setTimeout(tick, deleteSpeed);
+        }
+      }
+
+      tick();
+    })();
+  </script>
+</section>
+    </main>
 
     <script>
       function app() {
